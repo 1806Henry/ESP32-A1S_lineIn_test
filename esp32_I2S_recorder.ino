@@ -55,20 +55,19 @@ void setup() {
     delay(1000);
   }
   
-  ac.SetLineSource();
    ac.SetI2sWordSize(AC101::WORD_SIZE_16_BITS);
-ac.SetI2sSampleRate(AC101::SAMPLE_RATE_44100);
-ac.SetI2sClock(AC101::BCLK_DIV_16, false, AC101::LRCK_DIV_32, false);
-ac.SetI2sMode(AC101::MODE_SLAVE);
-ac.SetI2sWordSize(AC101::WORD_SIZE_16_BITS);
-ac.SetI2sFormat(AC101::DATA_FORMAT_I2S);
+   ac.SetI2sSampleRate(AC101::SAMPLE_RATE_44100);
+   ac.SetI2sClock(AC101::BCLK_DIV_16, false, AC101::LRCK_DIV_32, false);
+   ac.SetI2sMode(AC101::MODE_SLAVE);
+   ac.SetI2sWordSize(AC101::WORD_SIZE_16_BITS);
+   ac.SetI2sFormat(AC101::DATA_FORMAT_I2S);
 
-/* nur bei activen output */
-ac.SetVolumeSpeaker(3);
-ac.SetVolumeHeadphone(99);
+   /* nur bei activen output */
+   ac.SetVolumeSpeaker(3);
+   ac.SetVolumeHeadphone(99);
 
-/* funktioniert auch mit aktivem output */
-ac.SetLineSource();
+   /* funktioniert auch mit aktivem output */
+   ac.SetLineSource();
 
 // Enable amplifier
 pinMode(GPIO_PA_EN, OUTPUT);
