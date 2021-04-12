@@ -25,6 +25,8 @@
 #define IIS_LCLK                    26
 #define IIS_DSIN                    25
 
+#define GPIO_PA_EN                  GPIO_NUM_21
+
 static AC101 ac;
 
 const int record_time = 10;  // second
