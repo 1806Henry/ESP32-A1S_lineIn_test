@@ -10,7 +10,7 @@ void I2S_Init(){
       .intr_alloc_flags = 0,
       .dma_buf_count = 8,
       .dma_buf_len = 64,
-	  .use_apll = false
+      .use_apll = false
     };
 	
     i2s_pin_config_t pin_config;
